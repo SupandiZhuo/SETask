@@ -1,0 +1,100 @@
+.course-container {
+  width: 100%;
+  font-family: poppins;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers everything */
+  justify-content: center;
+  min-height:85vh;
+  gap: 10px;
+}
+
+.course-list {
+  width: 100%; /* Adjust based on your design */
+  max-width: 1000px;
+  align-items: center;
+}
+
+.course-list-scroll {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+  gap: 20px; /* Space between items */
+  list-style: none;
+  justify-content: center;
+  max-width: 900px; /* Adjust based on your design */
+  padding: 20px;
+  margin: auto;
+}
+
+.course-item {
+  flex: 0 0 200px; /* Prevents items from shrinking */
+  height: 170px;
+  padding: 20px;
+  color: #e8e9f6;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-width: 100px; /* Adjust based on preference */
+  text-align: left;
+}
+
+.course-title-container h2 {
+  color: #e8e9f6;
+  font-size: 2em;
+}
+
+.course-title-container {
+  display: flex;
+  justify-content: space-between; /* Title on left, icon on right */
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; 
+  /* margin: 0 auto; Center container */
+}
+
+.course-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.streak-icon {
+  width: 30px; /* Adjust icon size */
+  height: 30px;
+}
+
+.streak-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center horizontally */
+  text-align: center;
+}
+
+.streak-logo {
+  width: 50px; /* Adjust size */
+  height: auto;
+}
+
+.streak-text {
+  margin-top: 5px; /* Spacing between icon and text */
+  font-size: 14px;
+  color: #e8e9f6;
+}
+
+.course-item:nth-child(1) {
+  background-color: #ff6b6b; /* Red */
+}
+
+.course-item:nth-child(2) {
+  background-color: #4ecdc4; /* Cyan */
+}
+
+.course-item:nth-child(3) {
+  background-color: #f7b801; /* Yellow */
+}
+
+.course-item:nth-child(4) {
+  background-color: #6a0572; /* Purple */
+}
+
+.course-item:nth-child(5) {
+  background-color: #3a86ff; /* Blue */
+}
