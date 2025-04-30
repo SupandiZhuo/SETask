@@ -2,28 +2,26 @@ import React, { useState } from "react";
 import "./NavBar.css";
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
-    <nav className="nav-container">
+    <nav className="nav-container" role="navigation" aria-label="Main navigation">
       <div className="nav">
-        <div className="nav-logo">
+        <div className="nav-logo" tabIndex={0}>
           Code<span className="highlight">E</span>asier
         </div>
 
-        {/* Desktop Menu */}
-        <ul className={`nav-menu ${isOpen ? "active" : ""}`}>
+        {/* Navigation menu */}
+        <ul className="nav-menu">
           <li>
-            <a href="#">Home</a>
+            <a href="#" tabIndex={0}>Home</a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a href="#" tabIndex={0}>About</a>
           </li>
           <li>
-            <a href="#">Achievement</a>
+            <a href="#" tabIndex={0}>Achievement</a>
           </li>
           <li className="login-register">
-            <a href="#">Login/Register</a>
+            <a href="#" tabIndex={0}>Login/Register</a>
           </li>
         </ul>
       </div>
